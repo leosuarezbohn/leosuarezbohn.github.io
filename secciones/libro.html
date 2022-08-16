@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <title>Ser Hincha de Morón</title>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
     <header class="menu">
         <div class="encabezado">
             <div class="logo_libro">
-                <img src="../imagenes/logo.jpg" alt="logo ser hincha de Morón" title="logo ser hincha de Morón" width="100">
+                <img src="../imagenes/logo_serhincha.png" alt="logo ser hincha de Morón" title="logo ser hincha de Morón" width="80">
             </div>
             <div>
                 <span class="titulo">Ser Hincha de&nbsp;<b>MORÓN</b></span>
                 <span class="subtitulo">Un estilo de vida. Un sello perpetuo.&nbsp;<b class="mayus">El Orgullo Mayor.</b></span>
             </div>
             <div class="escudo">
-                <img src="../imagenes/escudo.png" alt="escudo deportivo Morón" title="escudo deportivo Morón" width="70">
+                <img src="../imagenes/escudo.png" alt="escudo deportivo Morón" title="escudo deportivo Morón" width="60">
             </div>
         </div>
         <div class="menu_content">
@@ -33,84 +35,112 @@
             <input id="menu_btn" type="checkbox" />
 
             <div class="menu_list">
-                <ul>
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="libro.html">El Libro</a>
-                    </li>
-                    <li>
-                        <a href="historia.html">Historia</a>
-                    </li>
-                    <li>
-                        <a href="estadios.html">Estadios</a>
-                    </li>
-                    <li>
-                        <a href="torneo_actual.html">Torneo Actual</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+                <nav class="container-fluid" style="align-items: center; padding-top: 8px;">
+                    <ul class="nav justify-content-center" >
+                        <li class="nav-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="libro.html">El Libro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a  href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="estadios.html">Estadios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="torneo_actual.html">Torneo Actual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
-
     <main>
-        <div>
-            <h1><strong>SER HINCHA DE MORÓN</strong> - El Libro</h1>
-            <img src="../imagenes/libro.jpg" alt="Libro Moron" title="Libro Moron"
-            width="400" />
-            <p>Con los campeones del 2017 de la mano del Walter Otta, los hinchas del Gallo 
-                dejamos atrás 17 años de desgracias deportivas. En el año 2000, el Deportivo Morón 
-                descendió a la B Metropolitana, y desde entonces sufrimos con finales perdidas, 
-                pelear por no irnos a la Primera C y ver subir de categorías a todos nuestros rivales 
-                históricos. Así y todo, tenemos muchos motivos para llevar con orgullo nuestra 
-                gloriosa camiseta: las hazañas de Copa Argentina, la vuelta a la B Nacional, 
-                el enorme Damián Akerman, los míticos Estadios Francisco Urbano y un barrio que 
-                lleva nuestro nombre con un escudo rojo y blanco en cada esquina.<br>
-                Recorramos juntos estos últimos veinte años de historia con más de 800 síntesis 
-                detalladas de todos los partidos oficiales y estadísticas de cada temporada, 
-                planteles, goleadores y tablas de posiciones, sumados a algunas historias de cancha 
-                o de la vida que intentan explicar el motivo, la razón o la locura que nos llevan a 
-                SER HINCHAS DE MORÓN.
-            </p>
+        <div class="flex">
+            <div class="libro">
+                <div class="img">
+                    <img src="../imagenes/libro.jpg" alt="Libro Moron" title="Libro Moron"
+                    width="400" />
+                </div>
+                <div class="text">
+                    <h1><strong>SER HINCHA DE MORÓN</strong> - El Libro</h1>
+                    <p>Con los campeones del 2017 de la mano del Walter Otta, los hinchas del Gallo 
+                    dejamos atrás 17 años de desgracias deportivas. En el año 2000, el Deportivo Morón 
+                    descendió a la B Metropolitana, y desde entonces sufrimos con finales perdidas, 
+                    pelear por no irnos a la Primera C y ver subir de categorías a todos nuestros rivales 
+                    históricos. Así y todo, tenemos muchos motivos para llevar con orgullo nuestra 
+                    gloriosa camiseta: las hazañas de Copa Argentina, la vuelta a la B Nacional, 
+                    el enorme Damián Akerman, los míticos Estadios Francisco Urbano y un barrio que 
+                    lleva nuestro nombre con un escudo rojo y blanco en cada esquina.<br>
+                    Recorramos juntos estos últimos veinte años de historia con más de 800 síntesis 
+                    detalladas de todos los partidos oficiales y estadísticas de cada temporada, 
+                    planteles, goleadores y tablas de posiciones, sumados a algunas historias de cancha 
+                    o de la vida que intentan explicar el motivo, la razón o la locura que nos llevan a 
+                    SER HINCHAS DE MORÓN.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <h1>Secciones</h1>
-            <h2>TORNEOS 2000-2020</h2>
-            <img src="../imagenes/foto2003.jpg" alt="torneos 2000 a 2020" title="torneos 2000 a 2020"
-            width="200" />
-            <p>Formaciones, estadísticas, goleadores, presencias, tablas de posiciones de todos los
-                torneos que jugó el Gallo desde el 2000 hasta el 2020.
-            </p>
-            <h2>COPA ARGENTINA</h2>
-            <img src="../imagenes/copaargentina.jpg" alt="Copa Argentina" title="Copa Argentina"
-            width="200" />
-            <p> Detalle de todos los partidos disputados por el Gallo en la Copa que reúne a los equipos de
-                todas las categorías del país, donde logramos grandes hazañas.
-            </p>
-            <h2>RESUMEN HISTÓRICO</h2>
-            <img src="../imagenes/historia.jpg" alt="Libro Moron" title="Libro Moron"
-            width="200" />
-            <p>Repaso de los hechos mas sobresalientes de la historia del Club desde sus comienzos en
-                1947 hasta fines del año 2020.
-            </p>
-            <h2>DAMIÁN AKERMAN</h2>
-            <img src="../imagenes/damian.jpg" alt="Damián Akerman" title="Damián Akerman"
-            width="200" />
-            <p>Homenaje al máximo ídolo de nuestra historia, con un detallado resumen de su pasó
-                por Morón y el detalle de todos los goles que hizo con nuestra camiseta.
-            </p>
-            <h2>CUENTOS</h2>
-            <img src="../imagenes/logo.jpg" alt="Logo Ser Hincha de Morón" title="Logo Ser Hincha de Morón"
-            width="200" />
-            <p>Relatos, historias, anécdotas, recuerdos contados en primera persona de vivencias en 
-                distintas canchas de un hincha común y corriente.
-            </p>
-        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="../imagenes/moron_campeon.jpg" class="d-block w-100" alt="torneos 2000 a 2020" title="torneos 2000 a 2020">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-uppercase fw-bold">TORNEOS 2000-2020</h4>
+                  <p>Formaciones, estadísticas, goleadores, presencias, tablas de posiciones de todos los torneos que jugó el Gallo desde el 2000 hasta el 2020.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../imagenes/copaargentina.jpg" alt="Copa Argentina" title="Copa Argentina" class="d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-uppercase fw-bold">COPA ARGENTINA</h4>
+                  <p>Detalle de todos los partidos disputados por el Gallo en la Copa que reúne a los equipos de todas las categorías del país, donde logramos grandes hazañas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/historia.jpg" alt="Libro Moron" title="Libro Moron" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-uppercase fw-bold">RESUMEN HISTÓRICO</h4>
+                  <p>Repaso de los hechos mas sobresalientes de la historia del Club desde sus comienzos en 1947 hasta fines del año 2020.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/damian.jpg" alt="Damián Akerman" title="Damián Akerman" class="d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-uppercase fw-bold">DAMIÁN AKERMAN</h4>
+                  <p>Homenaje al máximo ídolo de nuestra historia, con un detallado resumen de su pasó por Morón y el detalle de todos los goles que hizo con nuestra camiseta.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/hinchada_moron.jpeg" alt="Hinchada de Morón" title="Hinchada de Morón" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-uppercase fw-bold">CUENTOS</h4>
+                  <p>Relatos, historias, anécdotas, recuerdos contados en primera persona de vivencias en distintas canchas de un hincha común y corriente.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
     <footer class="pie-pagina">
@@ -140,5 +170,9 @@
             <small>&copy; 2022 <b>Ser hincha de Morón</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
