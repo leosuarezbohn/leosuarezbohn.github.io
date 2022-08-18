@@ -1,0 +1,505 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Special Elite', cursive;
+  background-image: linear-gradient(to bottom, white 20%, red 50%, white 90%); }
+
+p {
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  background-color: red;
+  line-height: 23px;
+  letter-spacing: 1.5px; }
+
+ul {
+  color: red;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none; }
+
+span {
+  display: flex;
+  border-color: 2px solid red;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive; }
+
+h2 {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Special Elite', cursive; }
+
+h3 {
+  color: red;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Special Elite', cursive; }
+
+h4 {
+  background-color: white; }
+
+.titulo {
+  color: red;
+  font-size: 55px;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  letter-spacing: 5px;
+  height: 60px; }
+
+.subtitulo {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Special Elite', cursive; }
+
+.noticias {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.subnoti {
+  text-transform: uppercase;
+  color: grey;
+  background-color: red; }
+
+.torneo_actual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, #05c2fc 33%, #fff 33%, #fff 66%, #05c2fc 66%); }
+
+.mayus {
+  text-transform: uppercase;
+  font-size: 25px; }
+
+.menu .encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px; }
+
+.menu li {
+  margin: auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: rgba(223, 7, 7, 0.705);
+  display: inline-block; }
+
+.row {
+  background-color: white;
+  border: 2px solid black;
+  color: red;
+  padding: 20px; }
+  .row .row {
+    border: none;
+    background-color: transparent; }
+  .row p {
+    background-color: white;
+    color: red;
+    margin: 10px;
+    font-weight: bolder; }
+  .row h3 {
+    padding: 15px; }
+
+.historia {
+  background-image: url(../imagenes/textura-vieja-hoja-de-papel.jpg);
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 6px solid silver;
+  padding: 40px 10px;
+  color: black; }
+  .historia p {
+    color: black;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px; }
+  .historia h2 {
+    font-size: 40px; }
+  .historia h3 {
+    font-size: 60px; }
+
+.pie-pagina {
+  width: 100%;
+  background-color: white;
+  border: 4px solid #ee0505;
+  margin: auto;
+  width: auto;
+  margin-top: 20px; }
+  .pie-pagina .grupo-1 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure img {
+        width: 125px; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: black;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .pie-pagina .grupo-1 .box p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      background-color: white;
+      color: red; }
+    .pie-pagina .grupo-1 .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      margin-right: 10px;
+      background-color: red;
+      text-align: center;
+      transition: all 300ms ease; }
+    .pie-pagina .grupo-1 .red-social:hover {
+      color: black; }
+  .pie-pagina .grupo-2 {
+    background-color: red;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff; }
+    .pie-pagina .grupo-2 small {
+      font-size: 15px; }
+
+.menu_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-top: 10px; }
+
+.menu_list {
+  display: flex;
+  width: 100%;
+  background-color: red;
+  text-decoration: none;
+  margin: auto;
+  justify-content: center;
+  height: 40px;
+  align-items: center; }
+  .menu_list li {
+    text-align: center; }
+  .menu_list a {
+    color: white;
+    font-size: 18px;
+    line-height: 90%;
+    display: block; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    opacity: 0.5; }
+
+.carousel {
+  width: 70%;
+  justify-content: center;
+  border: 6px solid silver;
+  margin: auto; }
+
+.carousel-inner img {
+  object-fit: scale-down;
+  height: 90vh;
+  width: 100%; }
+
+.estadios h1 {
+  color: white;
+  margin: auto;
+  background-color: transparent;
+  padding-top: 20px;
+  letter-spacing: 5px;
+  background-image: linear-gradient(to bottom, white 20%, red 50%, white 90%); }
+
+form {
+  width: 90%;
+  margin: auto;
+  justify-content: center; }
+
+.flex {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 6px solid silver; }
+  .flex h1 {
+    text-align: center; }
+  .flex .libro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    column-gap: 20px;
+    padding: 0 10px; }
+    .flex .libro .carousel {
+      width: 30%;
+      justify-content: center;
+      border: none;
+      margin: auto;
+      font-size: 15px; }
+  .flex h2 {
+    color: silver;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 50px; }
+  .flex .text {
+    flex: 1;
+    width: 90%;
+    padding: 20px 10px; }
+
+.btn {
+  position: relative;
+  display: block;
+  color: red;
+  background-color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px 0;
+  border: 2px solid silver;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease; }
+  .btn::before {
+    background: red;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease; }
+
+.btn2::before {
+  width: 100%;
+  height: 0%; }
+
+.btn2:hover::before {
+  height: 100%; }
+
+.menu_btn {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase; }
+
+#menu_btn {
+  display: none; }
+
+.libro .img {
+  margin: 10px;
+  border: 3px solid black; }
+
+.ultimo_partido {
+  border: none; }
+
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.3); }
+  30% {
+    transform: scale(1.1); }
+  40% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+.escudo img {
+  animation-name: latido;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate; }
+
+.logo_libro img {
+  animation-name: latido;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate; }
+
+.alineado {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid black;
+  margin-top: 30px; }
+
+.moron {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to bottom, white 20%, red 50%, white 90%);
+  width: 90%;
+  margin: auto;
+  height: 80px;
+  border: 6px solid silver;
+  margin-top: 50px;
+  margin-bottom: 20px; }
+  .moron .noti {
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    color: black; }
+
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  width: auto;
+  margin: auto;
+  height: 70px;
+  border: 6px solid black;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, white 20%, red 50%, white 90%); }
+  .redes .facebook {
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: black; }
+
+.nacional h1 {
+  background-color: transparent;
+  color: black;
+  letter-spacing: 5px;
+  font-size: 45px;
+  justify-content: center;
+  text-align: center;
+  margin: auto; }
+
+.nacional h2 {
+  background-color: transparent;
+  color: black;
+  letter-spacing: 5px;
+  font-size: 40px;
+  justify-content: center;
+  text-align: center;
+  margin: auto; }
+
+.bandera h1 {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 45px;
+  height: 45px; }
+
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 10px;
+  margin-top: 50px;
+  background-image: linear-gradient(to bottom, white 33%, red 33%, red 66%, white 66%);
+  border: 2px solid black; }
+
+@media (min-width: 820px) {
+  .menu_list {
+    display: block; }
+  .menu_btn,
+  #menu_btn {
+    display: none; } }
+
+@media (max-width: 819px) {
+  .menu_list {
+    width: 90%;
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    transition: left 0.2s linear; }
+    .menu_list ul {
+      flex: 1;
+      flex-direction: column; }
+    .menu_list a {
+      padding: 10px; }
+  #menu_btn:checked + .menu_list {
+    left: 0; }
+  .titulo {
+    display: none; }
+  .subtitulo {
+    display: none; }
+  .mayus {
+    display: none; }
+  .escudo {
+    display: none; }
+  .logo_libro {
+    align-items: center;
+    justify-content: center; }
+  .flex {
+    width: 90%; }
+    .flex .libro {
+      flex-wrap: wrap; }
+    .flex img {
+      width: 100%; }
+  .noticias {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3); }
+  .moron {
+    width: 90%; }
+    .moron .noti {
+      font-size: 32px;
+      margin-top: 2px; }
+  .pie-pagina {
+    width: 90%; }
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px; }
+  .redes {
+    width: 90%; }
+    .redes .facebook {
+      display: none; }
+    .redes img {
+      width: 30px; }
+  .torneo_actual h1 {
+    font-size: 20px; }
+  .torneo_actual h2 {
+    font-size: 18px; }
+  .resumen .bandera {
+    display: none; } }
+
+/*# sourceMappingURL=hoja_de_estilos.css.map */
