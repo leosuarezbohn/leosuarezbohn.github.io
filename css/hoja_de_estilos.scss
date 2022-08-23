@@ -1,6 +1,21 @@
 $bandera:  white 20%, red 50%, white 90%;
 $borde: 6px solid silver;
 
+@mixin latido {
+    animation-name: latido;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@mixin texto ($tamano){
+    color:red;
+    text-decoration: none;
+    font-size: $tamano;
+    font-family: 'Special Elite', cursive;
+}
+
 html,
 body {
 	margin: 0;
@@ -46,29 +61,21 @@ h1 {
 }
 
 h2 {
-    color:red;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Special Elite', cursive;
+    @include texto(20px);
 }
 
 h3 {
-    color:red;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Special Elite', cursive;
+    @include texto(18px)
 }
 
-h4 {
-    background-color: white;
-}
+
 
 .titulo {
     color: red;
     font-size: 55px;
     text-align: center;
     font-family: 'Special Elite', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     height: 60px;
 }
 
@@ -153,13 +160,15 @@ h4 {
     }
 }
 
+
+
 .historia {
     background-image: url(../imagenes/textura-vieja-hoja-de-papel.jpg);
+    box-shadow: rgb(17, 18, 19) 0px 20px 30px -10px;
     width: 90%;
 	margin: auto;
 	margin-top: 30px;
     margin-bottom: 10px;
-    border: $borde;
     padding: 40px 10px;
     color:black;
 
@@ -168,11 +177,12 @@ h4 {
         background-color: transparent;
         padding: 10px;
         font-weight: bold;
-        font-size: 20px; 
+        font-size: 17px; 
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 25px;
+        color:black;
     }
 
     h3 {
@@ -301,8 +311,12 @@ a {
 .carousel {
     width: 70%;
     justify-content: center;
-    border: $borde;
     margin: auto;
+
+    h2 {
+        background-color: white;
+        font-size:25px;
+    }
 }
 
 .carousel-inner {
@@ -331,22 +345,34 @@ form {
     justify-content: center;
 }
 
+.sombra {
+    background: #e0e0e0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
 .flex {
 	width: 90%;
 	margin: auto;
 	margin-top: 30px;
     margin-bottom: 10px;
-    border: $borde;
 
     h1 {
         text-align: center;
+        color: black;
+    }
+
+    span {
+        color:red;
+        font-size: 25px;
+        font-weight: bolder;
     }
 
     .libro {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: red;
+        background-color: transparent;
         column-gap: 20px;
         padding: 0 10px;
 
@@ -370,6 +396,21 @@ form {
         flex: 1;
         width: 90%;
         padding: 20px 10px;
+
+        h1 {
+            color:red;
+            background-color: transparent;
+            box-shadow: #05c2fc;
+        }
+
+        p {
+            color:black;
+            background-color: transparent;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 17px;
+            margin-top: 10px;
+        }
     }
 
 }
@@ -460,21 +501,13 @@ form {
 
 .escudo {
     img {
-    animation-name: latido;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    @include latido;
     }
 }
 
 .logo_libro {
     img {
-    animation-name: latido;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    @include latido;
     }
 }
 
@@ -502,6 +535,10 @@ form {
     border: $borde;
     margin-top: 50px;
     margin-bottom: 20px;
+
+    h1 {
+        background-color: transparent;
+    }
 
     .noti {
         font-size:60px;
@@ -533,25 +570,17 @@ form {
 }
 
 .nacional {
-    h1 {
+    span {
         background-color: transparent;
         color:black;
-        letter-spacing: 5px;
-        font-size: 45px;
+        letter-spacing: 3px;
+        font-size: 35px;
         justify-content: center;
         text-align: center;
         margin: auto;
+
     }
 
-    h2 {
-        background-color: transparent;
-        color:black;
-        letter-spacing: 5px;
-        font-size: 40px;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-    }
 }
 
 .bandera {
@@ -569,9 +598,8 @@ form {
     align-items: center;
     justify-content: space-around;
     padding: 40px 10px;
-    margin-top: 50px;
     background-image: linear-gradient(to bottom, white 33%, red 33%, red 66%, white 66%);
-    border: 2px solid black;
+    
 }
 
 @media (min-width: 820px) {

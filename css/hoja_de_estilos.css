@@ -47,15 +47,12 @@ h3 {
   font-size: 18px;
   font-family: 'Special Elite', cursive; }
 
-h4 {
-  background-color: white; }
-
 .titulo {
   color: red;
   font-size: 55px;
   text-align: center;
   font-family: 'Special Elite', cursive;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   height: 60px; }
 
 .subtitulo {
@@ -123,11 +120,11 @@ h4 {
 
 .historia {
   background-image: url(../imagenes/textura-vieja-hoja-de-papel.jpg);
+  box-shadow: #111213 0px 20px 30px -10px;
   width: 90%;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 10px;
-  border: 6px solid silver;
   padding: 40px 10px;
   color: black; }
   .historia p {
@@ -135,9 +132,10 @@ h4 {
     background-color: transparent;
     padding: 10px;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 17px; }
   .historia h2 {
-    font-size: 40px; }
+    font-size: 25px;
+    color: black; }
   .historia h3 {
     font-size: 60px; }
 
@@ -228,8 +226,10 @@ a {
 .carousel {
   width: 70%;
   justify-content: center;
-  border: 6px solid silver;
   margin: auto; }
+  .carousel h2 {
+    background-color: white;
+    font-size: 25px; }
 
 .carousel-inner img {
   object-fit: scale-down;
@@ -249,19 +249,27 @@ form {
   margin: auto;
   justify-content: center; }
 
+.sombra {
+  background: #e0e0e0;
+  box-shadow: #26394d 0px 20px 30px -10px; }
+
 .flex {
   width: 90%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 10px;
-  border: 6px solid silver; }
+  margin-bottom: 10px; }
   .flex h1 {
-    text-align: center; }
+    text-align: center;
+    color: black; }
+  .flex span {
+    color: red;
+    font-size: 25px;
+    font-weight: bolder; }
   .flex .libro {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: transparent;
     column-gap: 20px;
     padding: 0 10px; }
     .flex .libro .carousel {
@@ -279,6 +287,17 @@ form {
     flex: 1;
     width: 90%;
     padding: 20px 10px; }
+    .flex .text h1 {
+      color: red;
+      background-color: transparent;
+      box-shadow: #05c2fc; }
+    .flex .text p {
+      color: black;
+      background-color: transparent;
+      font-weight: bolder;
+      font-style: italic;
+      font-size: 17px;
+      margin-top: 10px; }
 
 .btn {
   position: relative;
@@ -375,6 +394,8 @@ form {
   border: 6px solid silver;
   margin-top: 50px;
   margin-bottom: 20px; }
+  .moron h1 {
+    background-color: transparent; }
   .moron .noti {
     font-size: 60px;
     letter-spacing: 3px;
@@ -399,20 +420,11 @@ form {
     letter-spacing: 3px;
     color: black; }
 
-.nacional h1 {
+.nacional span {
   background-color: transparent;
   color: black;
-  letter-spacing: 5px;
-  font-size: 45px;
-  justify-content: center;
-  text-align: center;
-  margin: auto; }
-
-.nacional h2 {
-  background-color: transparent;
-  color: black;
-  letter-spacing: 5px;
-  font-size: 40px;
+  letter-spacing: 3px;
+  font-size: 35px;
   justify-content: center;
   text-align: center;
   margin: auto; }
@@ -429,9 +441,7 @@ form {
   align-items: center;
   justify-content: space-around;
   padding: 40px 10px;
-  margin-top: 50px;
-  background-image: linear-gradient(to bottom, white 33%, red 33%, red 66%, white 66%);
-  border: 2px solid black; }
+  background-image: linear-gradient(to bottom, white 33%, red 33%, red 66%, white 66%); }
 
 @media (min-width: 820px) {
   .menu_list {
@@ -501,5 +511,3 @@ form {
     font-size: 18px; }
   .resumen .bandera {
     display: none; } }
-
-/*# sourceMappingURL=hoja_de_estilos.css.map */
